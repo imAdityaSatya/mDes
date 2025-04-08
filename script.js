@@ -1,7 +1,7 @@
 const container = document.getElementById("product-container");
 
 // My deployed Apps Script URL 👇
-const API_URL = 'https://script.google.com/macros/s/AKfycbznVvCvQYwSqXq5oHTz1uq2Goh4u-O1oBvZOdJj7Ml4rcCJZrpsg7TiV9a60nKVeo4e/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbw9aImBgHRaDUn1T0Xu2vDyi-t4f4lmH6T5M0vuiWyg4aLj-H2zqYSQP9wX7yh1cPB7/exec';
 
 fetch(API_URL)
   .then(res => res.json())
@@ -27,6 +27,6 @@ fetch(API_URL)
     });
   })
   .catch(err => {
-    container.innerHTML = "<p>Error loading products. Please try again later.</p>";
+    container.innerHTML = "<p>Error loading products. Please try again.</p>";
     console.error("Error:", err);
   });
